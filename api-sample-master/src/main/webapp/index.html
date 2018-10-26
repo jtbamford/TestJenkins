@@ -9,7 +9,8 @@
 			var request = new XMLHttpRequest();
 			request.open('GET', 'http://localhost:8080/accountapp/api/account/getAllAccounts', false);
 			request.send(null);
-			return request.responseText;
+			document.getElementByID("output").innerHTML = request.responseText;
+
 		}
 
 
@@ -24,6 +25,8 @@
 
 
 <form>
+
+<p id="output"></p>
 
 <button type="submit" onclick="getallaccounts()">Display all Results</button>
 
