@@ -2,10 +2,8 @@
 <html>
 
 
-  <head>
-<!--   
-    <script>
-
+<body>
+		<script>
 		function getallaccounts() {
 			var request = new XMLHttpRequest();
 			request.open('GET', 'http://localhost:8080/accountapp/api/account/getAllAccounts', false);
@@ -13,24 +11,15 @@
 			document.getElementByID("output").innerHTML = request.responseText;
 
 		}
-		-->
-		<script>
-
-
-      function getallaccounts() {
-	  window.alert("Hello!");
-      }
 
 
 		</script>
-</head>
-
-<body>
 	<form>
-<!--
+
+
+
 <button type="submit" onclick="getallaccounts()">Display all Results</button>
--->
-<button type="submit" onclick="getallaccounts">Display all Results</button>
+
 
 </form>
 </body>
