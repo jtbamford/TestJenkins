@@ -6,7 +6,7 @@
 			var request = new XMLHttpRequest();
 			request.open('GET', 'http://localhost:8080/accountapp/api/account/getAllAccounts', false);
 			request.send(null);
-			window.alert(request.response);
+			return request.responseText;
 		}
 
 
@@ -23,8 +23,6 @@
 <form>
 
 <button type="submit" onclick="getallaccounts()">Display all Results</button>
-<button type="submit" onclick="registered()">Add user </button>
-
 
 </form>
 </body>
