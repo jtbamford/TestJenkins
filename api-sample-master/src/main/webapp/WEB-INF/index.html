@@ -2,9 +2,9 @@
 <html>
 	<head> 
 		<script>
-		function getallaccounts(url) {
+		function getallaccounts() {
 			var request = new XMLHttpRequest();
-			request.open('GET', url, false);
+			request.open('GET', 'http://localhost:8080/accountapp/api/account/getAllAccounts', false);
 			request.send(null);
 			return request.response;
 		}
@@ -27,7 +27,7 @@
 		<form>
 			<div id="registration" align="center" > 
 
-<button type="submit" onclick="getallaccounts('http://localhost:8080/accountapp/api/account/getAllAccounts')">Display all Results</button>
+<button type="submit" onclick="getallaccounts()">Display all Results</button>
 <button type="submit" onclick="registered()">Add user </button>
 
 </div>
