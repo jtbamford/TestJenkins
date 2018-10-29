@@ -140,13 +140,6 @@
     </profile>
  </profiles>
 
-<distributionManagement>
-    <repository>
-      <id>repodeploy</id>
-      <url>C:\Users\Admin\ExternalApplications\wildfly-10.1.0.Final\wildfly-10.1.0.Final\standalone\deployments</url>
-    </repository>
-</distributionManagement>
-
     <build>
         <!-- Maven will append the version to the finalName (which is the
             name given to the generated WAR, and hence the context root) -->
